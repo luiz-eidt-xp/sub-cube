@@ -1,0 +1,165 @@
+:root {
+    --primary-color: #1a1a1a; /* Azul-escuro */
+    --secondary-color: #4D4D4D; /* Verde-água */
+    --accent-color: #336699; /* Azul-claro */
+    --text-color: #ecf0f1; /* Branco-claro */
+    --background-color: #1a1a1a; /* Cinza-escuro */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: inherit;
+    
+
+
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    padding: 0 10px;
+    display: grid;
+  
+}
+
+header {
+    background: #1a1a1a;
+    color: var(--text-color);
+    padding: 20px;
+    text-align: center;
+    flex-wrap: wrap; /* Faz os itens quebrarem a linha quando necessário */
+    justify-content: space-between;
+    display: grid;
+  align-items: center;
+  text-align: center;
+  z-index: 2;
+}
+
+header h1 {
+    font-size: 2.5em;
+    text-align: center;
+    align-items: center;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background: var(--secondary-color);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    flex-wrap: wrap; /* Faz os itens quebrarem a linha quando necessário */
+  justify-content: space-between;
+  display: grid;
+   align-items: center;
+}
+
+.tutorial {
+    margin-bottom: 20px;
+    padding: 20px;
+    background: var(--accent-color);
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    flex-wrap: wrap; /* Faz os itens quebrarem a linha quando necessário */
+  justify-content: space-between;
+  display: grid;
+  align-items: center;
+}
+
+.tutorial h2 {
+    margin-bottom: 10px;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+    background: var(--primary-color);
+}
+
+footer p {
+    color: var(--text-color);
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+
+    header h1 {
+        font-size: 2em;
+    }
+
+    .tutorial h2 {
+        font-size: 1.5em;
+    }
+}
+
+#videos3x3 {
+  font-size: 40px;
+}
+
+#playlist3x3 {
+  background-color: #34495e;
+  margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.videos2x2 {
+  background-color: #34495e;
+  margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+#logo {
+  color: #D4F1F9;
+}
+
+.animated-link {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 18px;
+    margin: 10px 0;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.animated-link:active {
+    animation: pulse 0.8s ease;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(0.7);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+a img {
+  outline: none; /* Remove borda ao clicar */
+}
+
+a:focus img,
+a:active img {
+  outline: none; /* Remove destaque ao clicar ou focar */
+}
+
+a:visited img {
+  filter: none; /* Evita alteração visual */
+}
