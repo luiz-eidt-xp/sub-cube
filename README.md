@@ -6,4 +6,4 @@
 
 ## Pagina
 
-(Sub-Cube)[sub-cube.netlify.app]
+[Sub-Cube](sub-cube.netlify.app)
