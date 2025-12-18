@@ -4,6 +4,4 @@
 
 #### Site criado para ajudar na aprendizagem sobre cubo mágico 
 
-## Pagina
-
-sub-cube.netlify.app
+## Pagina: [Sub-Cube](https://sub-cube.netlify.app/)
